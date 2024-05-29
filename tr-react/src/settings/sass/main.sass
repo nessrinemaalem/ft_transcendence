@@ -1,0 +1,42 @@
+#settings
+    
+    @import './../../form/sass/main'
+    
+    @import './_user-avatar'
+
+    .form
+        box-sizing: border-box
+        padding: 25px
+        border-radius: 0.4rem
+        background-color: var(--color-3)
+        margin-top: 25px
+
+        .message,
+        .error
+            font-size: 0.9rem
+            margin-top: 10px
+
+        .label
+            position: relative
+            display: flex
+            align-items: center
+            gap: 10px
+            &::before
+                content: ''
+                display: block
+                width: 50px
+                height: 2px
+                background: var(--color-4)
+        input
+            background-color: var(--color-4)
+        
+        .row button
+            background-color: var(--color-4)
+            color: var(--color-1)
+            &.enabled
+                background-color: var(--color-5)
+            &:hover
+                background-color: var(--color-5)
+
+        
+        

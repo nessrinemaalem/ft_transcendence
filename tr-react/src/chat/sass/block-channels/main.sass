@@ -1,0 +1,92 @@
+.block-channels
+    display: none
+    gap: 25px
+    border-radius: 0.4rem
+    font-size: 0.8rem
+    flex-direction: column
+    position: relative
+    overflow: auto
+    &.selected
+        display: flex
+
+    @import './../../../form/sass/main'
+    
+    .block-add-edit
+
+        &.selected.create .form-create
+            display: block
+        
+        &.selected.edit .form-edit
+            display: block
+
+        .options
+            display:  flex
+            justify-content: space-between
+            gap: 10px
+            button.btn-add
+                width: 40px
+                height: 40px
+                font-size: 20px
+            .name
+                font-size: 0.8rem
+                font-weight: bolder
+            button
+                &:not(.btn-add)
+                    padding: 0 10px
+                font-weight: bolder
+                border-radius: 0.4rem
+                background-color: var(--color-4)
+                &:hover
+                    background-color: var(--color-5)
+        .form
+            margin-top: 10px
+            display: none
+
+            button
+                color: var(--color-1)
+                background-color: var(--color-4)
+                &:hover
+                    background-color: var(--color-5)
+
+            
+        .rp
+            h6
+                font-size: 1.1rem
+                font-weight: bolder
+                margin-bottom: 10px
+            .rp-options
+                display: flex
+                align-items: center
+                gap: 5px
+            label
+                display: flex
+                align-items: center
+                gap: 5px
+        
+        
+    .block-list
+        flex: 1
+
+        .channel
+            background-color: var(--color-4)
+            box-sizing: border-box
+            padding: 10px
+            border-radius: 0.4rem
+            display: flex
+            gap: 10px
+            &:not(:first-child)
+                margin-top: 10px
+            .privacy
+                width: 15px
+                height: 15px
+            .name
+                flex: 1
+                font-size: 0.8rem
+            .users
+                font-size: 0.8rem
+                display: flex
+                align-items: center
+                gap: 10px
+   
+    @import './_block-tools'
+    @import './_join-confirm'

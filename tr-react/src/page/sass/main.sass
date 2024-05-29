@@ -1,0 +1,34 @@
+#page-sign
+    width: 100%
+    min-height: 100vh
+    box-sizing: border-box
+    padding: 10px
+    display: none
+    flex-direction: column
+    &.visible
+        display: flex
+
+#page
+    width: 100%
+    min-height: 100vh
+    box-sizing: border-box
+    padding: 100px 10px
+    display: none
+    flex-direction: column
+    &.visible
+        display: flex
+
+    .page-container
+        width: 1500px
+        margin: auto
+        flex: 1
+        display: flex
+        flex-direction: column
+
+    @media ( max-width: 1500px )
+        .page-container
+            width: 100%
+
+    // @media ( max-height: 1000px )
+    //     height: 100vh
+        

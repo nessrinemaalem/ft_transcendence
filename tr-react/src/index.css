@@ -1,0 +1,49 @@
+:root
+{
+  --color-1: #091C2A;
+  --color-2: #ffffff;
+
+  /* --color-3: #f1eaff;
+  --color-4: #e5d4ff;
+  --color-5: #dcbfff;
+  --color-6: #d0a2f7;
+	*/
+
+  --color-3: #E8E8E8;
+  --color-4: #BFBFBF;
+  --color-5 : #6A7C99;
+  --color-6: #B54644;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body
+{
+  width: 100%;
+  min-height: 100vh;
+
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+#root
+{
+  width: 100%;
+  min-height: 100%;
+}
+
+h1 {
+	font-family: "Bauer Bodoni W01 Roman";
+	text-transform: uppercase;
+}
+
+
+
+

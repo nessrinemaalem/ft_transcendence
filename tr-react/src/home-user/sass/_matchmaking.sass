@@ -1,0 +1,47 @@
+.matchmaking
+    width: 100%
+    border-top: 1px solid white
+    border-bottom: 1px solid white
+    box-sizing: border-box
+    padding: 10px 25px
+
+    h6
+        font-size: 0.9rem
+        color: var(--color-1)
+        text-align: left
+        box-sizing: border-box
+        padding: 10px
+
+    .on-progress,
+    .find,
+    .accept
+        display: flex
+        align-items: center
+        justify-content: space-between
+        box-sizing: border-box
+        padding: 10px 25px
+        gap: 10px
+        border-radius: 0.3rem
+        background-color: var(--color-6)
+        color: var(--color-2)
+
+        button
+            box-sizing: border-box
+            padding: 5px 10px
+            border-radius: 0.3rem
+            background-color: var(--color-3)
+            color: var(--color-1)
+            &:hover
+                background-color: var(--color-4)
+
+    .accept
+        margin-top: 10px
+
+    &.on-progress
+        .on-progress
+            display: flex
+    
+    &.find
+        .find
+            display: flex
+        

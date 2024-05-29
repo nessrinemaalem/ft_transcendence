@@ -1,0 +1,52 @@
+.form,
+form
+    margin-top: 50px
+    .row
+        text-align: left
+        &:not(:first-child)
+            margin-top: 10px
+        input
+            display: block
+            width: 100%
+            border-radius: 0.3rem
+            box-sizing: border-box
+            padding: 10px
+            outline: none
+            margin-top: 10px
+        label
+            font-size: 1.1rem
+            font-weight: bolder
+
+        @import './_code'
+
+        button,
+        .btn-42
+            box-sizing: border-box
+            padding: 10px
+            font-size: 0.9rem
+            font-weight: bolder
+            background-color: blue
+            color: white
+            border-radius: 0.3rem
+
+        .error
+            margin-top: 10px
+            color: var(--color-6)
+            text-align: left
+    
+    .row.r-new
+        a 
+            text-decoration: underline
+            font-style: oblique
+            color: blue
+
+    .r-code
+        box-sizing: border-box
+        padding: 25px
+        border-radius: 0.3rem
+        background-color: teal
+
+        p
+            text-align: center
+            font-size: 0.9rem
+            margin-bottom: 25px

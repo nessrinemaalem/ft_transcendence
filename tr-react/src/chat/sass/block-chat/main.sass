@@ -1,0 +1,47 @@
+.block-chat
+    width: 100%
+    max-height: 100%
+    flex: 1
+    display: none
+    flex-direction: column
+    gap: 10px
+    position: relative
+    overflow: hidden
+    &.selected
+        display: flex
+
+    .block-channel
+        box-sizing: border-box
+        padding: 10px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        gap: 10px
+
+        .name
+            font-size: 1.1rem
+            font-weight: bolder
+
+        button
+            font-size: 0.8rem
+            font-weight: bolder
+            padding: 10px
+            border-radius: 0.4rem
+            box-sizing: border-box
+            padding: 10px
+            background-color: var(--color-4)
+            &:hover
+                background-color: var(--color-5)
+
+
+    .block-mesages
+        flex: 1
+        overflow: auto
+        @import './_user-message'
+    
+    @import './_block-form'    
+    @import './_block-tools'
+
+    
+                    
+            

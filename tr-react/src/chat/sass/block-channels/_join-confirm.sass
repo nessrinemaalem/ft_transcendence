@@ -1,0 +1,53 @@
+.join-confirm
+    position: fixed
+    width: 400px
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    box-sizing: border-box
+    border-radius: 0.4rem
+    background-color: var(--color-4)
+    z-index: 1000
+    display: none
+    box-shadow: 1px 1px 4px #00000055
+    &.selected
+        display: block
+
+    .jc-close
+        box-sizing: border-box
+        padding: 10px
+        display: flex
+        justify-content: right
+    
+    .jc-info
+        box-sizing: border-box
+        padding: 10px
+        display: flex
+        gap: 10px
+        &:not(:first-child)
+            margin-top: 10px
+        .privacy
+            width: 15px
+            height: 15px
+        .name
+            flex: 1
+            font-size: 0.8rem
+        .users
+            font-size: 0.8rem
+            display: flex
+            align-items: center
+            gap: 10px
+
+    .jc-form
+        box-sizing: border-box
+        padding: 10px
+
+        button
+            background-color: var(--color-5)
+            color: var(--color-1)
+            &:hover
+                background-color: var(--color-6)
+
+
+
+            

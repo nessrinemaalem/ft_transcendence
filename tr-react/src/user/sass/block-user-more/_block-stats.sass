@@ -1,0 +1,45 @@
+.block-stats
+
+    .indicators
+        display: flex
+        gap: 25px
+        margin-top: 25px
+
+
+        .indicator
+            flex: 1
+            height: 250px
+            border-radius: 0.4rem
+            background-color: var(--color-3)
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+
+            .label
+                font-size: 1.1rem
+                font-weight: bolder
+            .value
+                font-size: 1.3rem
+                margin-top: 10px
+    
+    .daily-play
+        width: 100%
+        margin-top: 25px
+        overflow: hidden
+        display: none
+        .metric
+            width: 400px
+            height: 300px
+            border-radius: 0.4rem
+            background-color: var(--color-3)
+
+    @media ( max-width: 600px )
+        .indicators
+            flex-direction: column
+            height: 100vw
+
+        .daily-play .metric
+            width: 100%
+            overflow: hidden
+        

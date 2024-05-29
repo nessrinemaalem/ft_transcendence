@@ -1,0 +1,33 @@
+.block-form
+    box-sizing: border-box
+    padding-bottom: 10px
+
+    @import './../../../form/sass/main'
+    .form
+        margin-top: 0
+    
+    .row.message
+        display: flex
+        flex-align: flex-end
+        gap: 10px
+            
+        textarea
+            flex: 1
+            font-size: 0.9rem
+            box-sizing: border-box
+            padding: 10px
+            border-radius: 0.4rem
+            height: 100px
+            resize: none
+            outline: none
+        button
+            width: 40px
+            height: 40px
+            font-size: 20px
+            border-radius: 0.4rem
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: var(--color-4)
+            &:hover
+                background-color: var(--color-5)

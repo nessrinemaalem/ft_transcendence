@@ -1,0 +1,44 @@
+#sign-up
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    box-sizing: border-box
+    padding: 100px 10px
+    border-radius: 0.4rem
+    background-color: var(--color-3)
+    flex: 1
+
+    h1
+        font-weight: bolder
+        span
+            display: block
+            &.title-1
+                font-size: 2rem
+            &.title-2
+                font-size: 1.4rem
+
+    .container
+        width: 700px
+        
+        @import './../../form/sass/main'
+        
+        .form
+            margin-top: 50px
+
+            .message
+                margin-top: 25px
+                a
+                    text-decoration: underline
+                    font-size:  1rem
+                    font-style: oblique
+
+            .row .error
+                display: none
+
+    
+    @media ( max-width: 900px )
+        .container
+            width: 100%
+
+        

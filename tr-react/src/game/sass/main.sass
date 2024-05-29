@@ -1,0 +1,43 @@
+#game
+    width: 100%
+    flex: 1
+    box-sizing: border-box
+    padding: 10px
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+
+    .menu-items
+        width: 100%
+        display: flex
+        gap: 10px
+
+        button
+            font-size: 0.8rem
+            font-weight: bolder
+            padding: 10px
+            border-radius: 0.4rem
+            box-sizing: border-box
+            padding: 10px
+            background-color: var(--color-4)
+            &:hover
+                background-color: var(--color-5)
+
+    .main-items
+        width: 100%
+        
+    .mi-item
+        width: 100%
+        display: none
+        flex: 1
+        box-sizing: border-box
+        padding: 10px
+        flex-direction: column
+        align-items: center
+        &.selected
+            display: flex
+
+
+    @import './game-home/main'
+    @import './game-current/main'

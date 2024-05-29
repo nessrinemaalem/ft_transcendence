@@ -1,0 +1,17 @@
+.block-blocks
+    display: none
+    gap: 25px
+    border-radius: 0.4rem
+    font-size: 0.8rem
+    flex-direction: column
+    position: relative
+    overflow: auto
+    &.selected
+        display: flex
+    .block-users
+        flex: 1
+
+        @import './_user'
+
+    @import "./_block-tools"
+

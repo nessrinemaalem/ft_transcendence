@@ -1,0 +1,104 @@
+.game-current
+    width: 100%
+    flex: 1
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+
+    &.ready
+        .game-need-join
+            display: none
+        .game-ready
+            display: block
+
+    .game-need-join
+        width: 600px
+        height: 400px
+        border-radius: 0.4rem
+        background-color: var(--color-3)
+        display: block
+
+    .game-ready
+        display: none
+
+    .game
+        width: 600px
+        height: 400px
+        border-radius: 0.4rem
+        background-color: var(--color-3)
+        overflow: hidden
+        cursor: pointer
+
+    .game-noscreen
+        width: 100%
+        box-sizing: border-box
+        padding: 50px 10px
+        font-size: 0.8rem
+        background-color: var(--color-3)
+        justify-content: center
+        align-items: center
+        display: none
+        border-radius: 0.4rem
+
+    @import './_info'
+
+    .ready
+        display: flex
+        justify-content: center
+        margin-top: 10px
+        gap: 10px
+
+        button
+            font-size: 1.3rem
+            font-weight: bolder
+            padding: 10px
+            border-radius: 0.4rem
+            box-sizing: border-box
+            padding: 10px
+            background-color: var(--color-5)
+            &:hover
+                background-color: var(--color-4)
+
+    @import './../../../form/sass/main'
+
+    .form
+        width: 600px
+        box-sizing: border-box
+        padding: 10px
+        border-radius: 0.4rem
+        background-color: var(--color-3)
+        &.is-player
+            display: none
+
+        .row
+            button
+                background-color: var(--color-4)
+                color: var(--color-1)
+                &:hover
+                    background-color: var(--color-5)
+                &.selected
+                    background-color: var(--color-6)
+                    color: var(--color-2)
+        .row
+            .options
+                margin-top: 10px
+                display: flex
+                gap: 10px
+
+
+    @media ( max-width: 640px )
+
+        .game,
+        .info
+            display: none
+        
+        .game-noscreen
+            display: flex
+
+        .pong,
+        .form
+            width: 400px
+
+        .pong
+            height: 250px

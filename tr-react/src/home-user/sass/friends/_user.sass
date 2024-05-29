@@ -1,0 +1,42 @@
+.user
+    box-sizing: border-box
+    padding: 10px
+    display: flex
+    align-items: center
+    gap: 10px
+    .avatar
+        width: 30px
+        height: 30px
+        border-radius: 50%
+        overflow: hidden
+        position: relative
+        img
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+    .name
+        flex: 1
+        text-align: left
+    button
+        box-sizing: border-box
+        padding: 5px 10px
+        font-size: 0.8rem 
+        background-color: var(--color-4)
+        color: var(--color-1)
+        border-radius: 0.3rem
+        &:hover
+            background-color: var(--color-5)   
+    .status
+        display: flex
+        gap: 5px
+        align-items: center
+        .indicator
+            width: 10px
+            height: 10px
+            border-radius: 50%
+            background-color: red
+        .value
+            font-size: 0.8rem
